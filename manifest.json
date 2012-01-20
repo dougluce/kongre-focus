@@ -1,0 +1,12 @@
+{
+  "name": "DeSopa",
+  "version": "1.0",
+  "description": "Make Wikipedia visible.  By rob@desopa.con.com.",
+  "content_security_policy": "default-src 'none'; script-src 'self'",
+  "content_scripts": [
+     {
+       "matches": ["http://*.wikipedia.org/*"],
+       "js": ["desopa.js"]
+     }
+  ]
+}
