@@ -1,12 +1,19 @@
 {
-  "name": "DeSopa",
+  "name": "Kongre-Focus",
+  "browser_action": {
+    "default_icon": "entancient.png",
+    "default_title": "Kongre-Focus"
+  },
+
+  "icons": { "16": "ent-16.png",
+             "48": "ent-48.png",
+            "128": "ent-128.png" },
+
   "version": "1.0",
-  "description": "Make Wikipedia visible.  By rob@desopa.con.com.",
-  "content_security_policy": "default-src 'none'; script-src 'self'",
-  "content_scripts": [
-     {
-       "matches": ["http://*.wikipedia.org/*"],
-       "js": ["desopa.js"]
-     }
-  ]
+  "description": "Chop out unnecessary elements from Kongregate's game pages",
+
+  "permissions": [
+    "tabs", "http://*/*"
+  ],
+  "background_page": "background.html"
 }
