@@ -10,10 +10,8 @@ function removeByClass(id) {
 }
 
 removeByID('headerwrap');
-removeByID('gamepage_header');
-removeByID('subwrap');
-removeByClass('sitemessage');
-removeByClass('game_page_admindev_controls');
+removeByClass('gamepage_header_outer');
 removeByClass('game_details_outer');
 removeByClass('game_page_wrap');
-
+removeByID('subwrap');
+removeByID('chat_container_cell');
